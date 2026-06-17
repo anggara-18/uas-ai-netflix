@@ -36,12 +36,11 @@ try:
         st.markdown("---")
         st.subheader("🍿 Rekomendasi Film Serupa untuk Kamu:")
         
-        # Cari film lain yang berada di klaster kelompok yang sama
+        # KODE YANG BENAR:
         recommendations = df_movies[
             (df_movies['cluster'] == cluster_id) & 
             (df_movies['title'] != selected_movie)
-        ][['title', 'rating', 'listed_in']].header("Film Serupa").head(5) # Ambil 5 rekomendasi teratas
-        
+        ][['title', 'rating', 'listed_in']].head(5)
         # Ubah nama kolom tabel agar rapi saat dibaca dosen
         recommendations.columns = ['Judul Film', 'Rating Usia', 'Genre / Kategori']
         
