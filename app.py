@@ -4,7 +4,7 @@ import pickle
 
 st.set_page_config(page_title="Netflix Movie Recommendation", layout="centered", page_icon="🎬")
 
-st.title("🎬 Netflix Movie Recommendation System")
+st.title("Netflix Movie Recommendation System")
 st.write("Aplikasi Rekomendasi Film Berbasis **K-Means Clustering (Machine Learning)**.")
 st.write("Sumber Dataset Resmi: [Kaggle - Netflix Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)")
 
@@ -31,10 +31,10 @@ try:
         cluster_id = movie_data['cluster']
         
         st.success(f"Kamu memilih film: **{selected_movie}**")
-        st.write(f"ℹ️ *Karakteristik Film Ini: Rating Usia ({movie_data['rating']}) | Genre ({movie_data['listed_in']})*")
+        st.write(f"ℹ *Karakteristik Film Ini: Rating Usia ({movie_data['rating']}) | Genre ({movie_data['listed_in']})*")
         
         st.markdown("---")
-        st.subheader("🍿 Rekomendasi Film Serupa untuk Kamu:")
+        st.subheader("Rekomendasi Film Serupa untuk Kamu:")
         
         # KODE YANG BENAR:
         recommendations = df_movies[
