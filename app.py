@@ -31,7 +31,7 @@ try:
         cluster_id = movie_data['cluster']
         
         st.success(f"Kamu memilih film: **{selected_movie}**")
-        st.write(f"ℹ *Karakteristik Film Ini: Rating Usia ({movie_data['rating']}) | Genre ({movie_data['listed_in']})*")
+        st.write(f"!*Karakteristik Film Ini: Rating Usia ({movie_data['rating']}) | Genre ({movie_data['listed_in']})*")
         
         st.markdown("---")
         st.subheader("Rekomendasi Film Serupa untuk Kamu:")
